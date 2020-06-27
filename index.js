@@ -1,23 +1,26 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
-let test = 'Test'
-
-const questions = [
-    inquirer.prompt([
+inquirer
+    .prompt([
         {
+            type: "input",
             name: "userGitHub",
             message: "What is your GitHub username?"
         },
         {
+            type: "input",
             name: "userEmail",
             message: "What is your email address?"
         },
         {
-            name: "userProject",
-            message: "What is your project's name?"
+            type: "input",
+            name: "title",
+            message: "What is the title of your Project?"
         },
         {
+            type: "input",
             name: "userDescription",
             message: "Please write a short description of your project"
         },
@@ -28,44 +31,49 @@ const questions = [
             choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "none"]
         },
         {
+            type: "input",
             name: "userDependencies",
             message: "What command should be run to install dependencies?",
             default: "npm i"
         },
         {
+            type: "input",
             name: "runTest",
             message: "What command should be run to run tests?",
             default: "npm test"
         },
         {
+            type: "input",
             name: "userKnow",
             message: "What does the user need to know about using the repo?"
         },
         {
+            type: "input",
             name: "userContribute",
             message: "What does the user need to know about contributing to the repo?"
-        },
-    
+        }
+    ])
 
-    ]).then(answers => {
-        let fileName = answers.userProject + ".txt";
+.then(function (response){
+        
 
-        fs.writeFile(fileName, JSON.stringify(answers, null, 4), (err) => {
-            if (err) {
-                throw err;
-            }
-            console.log("file has been saved!");
-        });
-    })
-];
+    let fileName = response.title.toLowerCase().split(' ').join('') + ".md";
+
+    // generateMarkdown.generateMarkdown(answers);
+    fs.writeFile(fileName, generateMarkdown(response), (err) => {
+        if (err) {
+            return console.log("error");
+        }
+    });
+
+});
 
 
 
-    // console.log(questions);
-    // )};
+// function writeToFile(file, data) {
 
-// function writeToFile(fileName, data) {
 // }
+// // writeToFile(fileName, answers);
 
 // function init() {
 
