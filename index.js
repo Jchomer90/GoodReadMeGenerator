@@ -59,7 +59,6 @@ inquirer
 
     let fileName = response.title.toLowerCase().split(' ').join('') + ".md";
 
-    // generateMarkdown.generateMarkdown(answers);
     fs.writeFile(fileName, generateMarkdown(response), (err) => {
         if (err) {
             return console.log("error");
@@ -67,10 +66,3 @@ inquirer
     });
 
 });
-
-
-// function init() {
-
-// }
-
-// init();

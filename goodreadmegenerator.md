@@ -1,10 +1,10 @@
 
-  # Test
+  # Good README Generator
 
-  ![GitHub License](https://img.shields.io/badge/license-APACHE_2.0-blue.svg)
+  ![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)
 
   ## Description
-  It's really a great project
+  The user will run the application from the command line and answer the prompts, to receive a professionally formatted README document
 
   ## Table of Contents
 
@@ -27,15 +27,15 @@
 
   ## Usage
   
-  run 'node index.js'
+  Run 'index.js'
 
   ## License
 
-  This project is licensed under APACHE 2.0
+  This project is licensed under MIT
 
   ## Contributing
 
-  Joshua Homer
+  *[Joshua Homer](https://github.com/Jchomer90)
 
   ## Test
 
