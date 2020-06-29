@@ -1,4 +1,4 @@
-# Good README Generator
+# Professional README Generator
 
 ## About
 
@@ -12,12 +12,16 @@ I generated a markdown template to utilize the user's responses, and properly fo
 
 * [Joshua Homer](https://github.com/Jchomer90)
 
-## Run 'index.js'
+## User Experience
+* <a href="https://drive.google.com/file/d/1O9uuPsChl4wQPxvesHiL1UTe2xSiJmAE/view">Video</a>
+
+### Run 'node index.js'
 <img src="./screenshots/screenshot1.jpeg" alt="Run index.js" width="700">
 
-## Answer prompted questions
+### Answer prompted questions
 <img src="./screenshots/screenshot2.jpeg" alt="Prompt questions" width="700">
 
-## Results
+### Results
 <img src="./screenshots/screenshot3.jpeg" alt="Result1" width="700">
+<br>
 <img src="./screenshots/screenshot4.jpeg" alt="Result2" width="700">

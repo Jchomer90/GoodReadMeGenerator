@@ -50,9 +50,8 @@ function generateMarkdown(data) {
   You can find more of my work at www.github.com/${data.userGitHub}.
   `;
   return readMe;
-    // console.log(data);
+
   }
 
 module.exports = generateMarkdown;
 
-// JSON.stringify(answers, null, 4)

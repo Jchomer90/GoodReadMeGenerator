@@ -1,10 +1,10 @@
 
-  # Good README Generator
+  # Good Read Me
 
   ![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)
 
   ## Description
-  The user will run the application from the command line and answer the prompts, to receive a professionally formatted README document
+  Short description
 
   ## Table of Contents
 
@@ -27,7 +27,7 @@
 
   ## Usage
   
-  Run 'index.js'
+  Run node index.js
 
   ## License
 
@@ -35,7 +35,7 @@
 
   ## Contributing
 
-  *[Joshua Homer](https://github.com/Jchomer90)
+  Joshua Homer
 
   ## Test
 
