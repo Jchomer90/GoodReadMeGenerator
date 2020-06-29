@@ -1,7 +1,10 @@
 function generateMarkdown(data) {
+  var licenseTag = data.userLicense.split(" ").join("_") 
   let readMe =
 `
   # ${data.title}
+
+  ![GitHub License](https://img.shields.io/badge/license-${licenseTag}-blue.svg)
 
   ## Description
   ${data.userDescription}
@@ -13,6 +16,8 @@ function generateMarkdown(data) {
   * [Usage](#usage)
 
   * [License](#license)
+
+  * [Contributing](#contributing)
 
   * [Tests](#tests)
 
@@ -42,7 +47,7 @@ function generateMarkdown(data) {
 
   ## Questions
   If you have any questions about the repository, open an issue or contact me directly at ${data.userEmail}.
-  You can find more of my work at ${data.userGitHub}.
+  You can find more of my work at www.github.com/${data.userGitHub}.
   `;
   return readMe;
     // console.log(data);

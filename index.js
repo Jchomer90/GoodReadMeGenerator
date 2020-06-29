@@ -69,12 +69,6 @@ inquirer
 });
 
 
-
-// function writeToFile(file, data) {
-
-// }
-// // writeToFile(fileName, answers);
-
 // function init() {
 
 // }

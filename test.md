@@ -1,8 +1,10 @@
 
-  # test ReadMe
+  # Test
+
+  ![GitHub License](https://img.shields.io/badge/license-APACHE_2.0-blue.svg)
 
   ## Description
-  Using node js, create a command line ReadMe Generator
+  It's really a great project
 
   ## Table of Contents
 
@@ -11,6 +13,8 @@
   * [Usage](#usage)
 
   * [License](#license)
+
+  * [Contributing](#contributing)
 
   * [Tests](#tests)
 
@@ -23,11 +27,11 @@
 
   ## Usage
   
-  Must run Must run node index.js
+  run 'node index.js'
 
   ## License
 
-  This project is licensed under MIT
+  This project is licensed under APACHE 2.0
 
   ## Contributing
 
@@ -40,5 +44,5 @@
 
   ## Questions
   If you have any questions about the repository, open an issue or contact me directly at Joshuachomer@gmail.com.
-  You can find more of my work at Jchomer90.
+  You can find more of my work at www.github.com/Jchomer90.
   
